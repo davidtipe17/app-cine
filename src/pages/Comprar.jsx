@@ -2,8 +2,9 @@ import { useState, useContext } from "react";
 import { useCart } from "../context/CartContext";
 import { AuthContext } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
+import Checkout from "../components/Checkout";
 import emailjs from "@emailjs/browser";
-import Checkout from "../components/checkout.jsx";
+
 
 const Comprar = () => {
   const { cartItems, removeFromCart } = useCart();
